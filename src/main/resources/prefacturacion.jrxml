@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="prefacturacion" pageWidth="595" pageHeight="980" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2825c6cd-892f-4137-b681-c52ac3dc6adf">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="Dataset1" uuid="5aff6c58-0eed-4017-b6dc-bfcfdc46e770">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="producto" class="java.lang.String"/>
+	<field name="finalidad" class="java.lang.String"/>
+	<field name="monto" class="java.lang.String"/>
+	<field name="plazo" class="java.lang.String"/>
+	<field name="periodoGracia" class="java.lang.String"/>
+	<field name="numeroCuotas" class="java.lang.String"/>
+	<field name="vigencia" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="1" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="150" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="110" width="210" height="20" forecolor="#585858" uuid="2c8b7d34-b271-42ec-a0f3-14ce54e9d842"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[¡Felicitaciones! Queremos contarte que hemos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="110" width="50" height="20" forecolor="#585858" uuid="0249250d-5c4b-47fd-81a3-8bbfd7243270"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[aprobado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="110" width="154" height="20" forecolor="#585858" uuid="6c5f3ab6-21db-4eed-a1f1-6f69421e502d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[las siguientes características de tu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="110" width="90" height="20" forecolor="#585858" uuid="e9fa2643-3830-4733-9acb-79974ca03795"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[solicitud de Crédito]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="60" height="20" forecolor="#585858" uuid="358cd2c3-25f3-4a8b-9346-9872f6550576"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hipotecario:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="40" height="20" forecolor="#585858" uuid="6759a9d3-43cb-4de5-adca-b6fb8ff2e36f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="40" height="20" forecolor="#585858" uuid="94fe9190-6faf-4157-bccc-d7adca31bd33"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sr(a).]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="60" width="160" height="20" forecolor="#585858" uuid="79e36f6e-b225-4e3b-8737-26254e638bd1"/>
+				<textElement markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="40" width="150" height="20" forecolor="#585858" uuid="eb9c31c8-778b-494a-a552-0b829858e349"/>
+				<textElement markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="80" width="50" height="20" forecolor="#585858" uuid="a89d7de6-eacc-46b0-86d2-f3c90ef5d06c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Presente.-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="330" height="30" forecolor="#FF7417" uuid="05ea7ae3-c5e6-4049-ae21-635da066d7df"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Crédito Hipotecario - Constancia de aprobación crediticia]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="249" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout"/>
+			<rectangle>
+				<reportElement x="80" y="0" width="360" height="19" forecolor="#FFFFFF" backcolor="#0E50AA" uuid="1f72ab0b-0d92-419e-b807-4b331db54704"/>
+				<graphicElement>
+					<pen lineColor="#0E50AA"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="225" y="0" width="70" height="18" forecolor="#FFFFFF" uuid="803c47a0-1afc-4198-b0d6-512ef25a40fd"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(255, 255, 255, 0.0)"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Características]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="19" width="130" height="20" forecolor="#585858" uuid="2b0af155-e556-4c80-a3f8-3e9cf5a4e591"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[  Producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="39" width="130" height="20" forecolor="#585858" uuid="220d381c-66cb-4ded-b8f9-6eafebd4c43c"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[  Finalidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="59" width="130" height="20" forecolor="#585858" uuid="b6a9eb38-35a6-4915-86db-3dfaf1676cdc"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[   Monto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="79" width="130" height="20" forecolor="#585858" uuid="9fe80c11-16d4-4225-8a07-03749238c8bb"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[   Plazo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="99" width="130" height="20" forecolor="#585858" uuid="3a5daad1-0dc9-4ff7-bcd5-a89496d24bd4"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[   Periodo de gracia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="119" width="130" height="20" forecolor="#585858" uuid="231965c1-6afe-438e-be98-f730bbde0383"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[   Número de cuotas]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="210" y="19" width="230" height="20" forecolor="#585858" uuid="53f67b0e-1b87-406f-8af6-44591b813c4f"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[   $F{producto}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="210" y="39" width="230" height="20" forecolor="#585858" uuid="7d721ec4-5ce8-4060-8fb9-c2b160493d21"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[   $F{finalidad}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="210" y="59" width="230" height="20" forecolor="#585858" uuid="3b85146b-af17-4a21-b430-8e0d830a8710"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[   $F{monto}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="210" y="79" width="230" height="20" forecolor="#585858" uuid="ee1188b7-345f-441c-8e5f-42e1e27ebc91"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[   $F{plazo}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="210" y="99" width="230" height="20" forecolor="#585858" uuid="0f78a073-81fc-4515-9c50-d3813b3db735"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[   $F{periodoGracia}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="210" y="119" width="230" height="20" forecolor="#585858" uuid="4b43a7e1-4316-42a7-b5fa-ad57d1d6a980"/>
+				<box>
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<leftPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<bottomPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+					<rightPen lineWidth="0.75" lineStyle="Solid" lineColor="#F2F2F2"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[   $F{numeroCuotas}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="150" width="170" height="20" forecolor="#585858" uuid="52b3deee-95bb-423e-aab8-6b11ba4bfbab"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Esta constancia tiene una vigencia de ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement stretchType="ContainerBottom" x="170" y="150" width="20" height="20" isRemoveLineWhenBlank="true" forecolor="#585858" uuid="03b8e203-82d2-4ae1-b390-809372952694"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.75" lineColor="#F2F2F2"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top" markup="styled">
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vigencia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="190" y="150" width="320" height="20" forecolor="#585858" uuid="ff231fd1-7f9f-48f2-bc40-1a12cd4329d5"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[días calendarios contados a partir de su fecha de emisión. Transcurrido este ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="170" width="510" height="20" forecolor="#585858" uuid="b3c4c907-ff1c-493e-b8de-569b248c81c9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[plazo estarás sujeto a una nueva evaluación crediticia. No olvides que la firma del contrato de crédito no amplía este plazo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="310" height="20" forecolor="#585858" uuid="5887f2ea-9403-4ad3-a11d-dc9c70e1f514"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[de vigencia, por lo que deberás desembolsar tu crédito dentro de este plazo.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="220" width="260" height="20" forecolor="#585858" uuid="d116717d-1ea0-443b-8646-1a0c9796a86c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Para continuar con el proceso debes seguir los siguientes pasos:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="289" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="20" height="20" forecolor="#585858" uuid="623938b2-cf9a-4643-b557-1655daa89680"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="0" width="480" height="40" forecolor="#585858" uuid="75e5c703-cf44-4873-9dec-35d0db52ded1"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Presentar los documentos del inmueble que deseas comprar, los cuales revisaremos con el fin de determinar que el inmueble se encuentra en estado para respaldar tu crédito. Recuerda que si se trata de un proyecto BCP no será necesario que presentes estos documentos.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="40" width="20" height="20" forecolor="#585858" uuid="899aa1f0-6e08-42a8-a4fe-e9e8c5221882"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="40" width="480" height="30" forecolor="#585858" uuid="b2ff424d-ff87-4a9b-a7e9-1360cc3f4267"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Obtener una tasación –efectuada por peritos designados por el Banco– del inmueble a financiar, que cubra el monto del crédito y determine que el inmueble es asegurable.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="70" width="20" height="20" forecolor="#585858" uuid="8ad3dc9e-f466-48b4-9fa2-3d1c3f938883"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="70" width="480" height="30" forecolor="#585858" uuid="f3c12ba8-4165-44fe-ac7a-b5740377d2a2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Obtener la aprobación del Seguro de Desgravamen y Seguro del Inmueble por parte de la Compañía de Seguros.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="510" height="30" forecolor="#585858" uuid="d0cd0913-8f55-4402-8aac-1406a6327476"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ten en cuenta que no somos responsables por la pérdida de adelantos o entrega de arras que pudiesen haberse acordado antes o después de la emisión de esta constancia.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="141" width="50" height="20" forecolor="#585858" uuid="21f0aef9-f757-489c-ab2e-53a00f8a6c7d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Importante:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="160" width="500" height="100" forecolor="#585858" uuid="e6330e1c-0bef-4b71-82ad-7b90ffb3a4dc"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Si tu comportamiento o calificación crediticia se ven deteriorados, el Banco podrá dejar sin efecto la aprobación de tu crédito.
+
+El monto ha sido aprobado considerando el porcentaje mínimo de cuota inicial establecido para la finalidad y se calcula multiplicando este porcentaje por el menor valor entre el precio de venta y el valor comercial de la tasación.
+
+Si el número de cuotas anuales es 14, significa que se generarán cuotas dobles en los meses de julio y diciembre. 
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="160" width="10" height="20" forecolor="#585858" uuid="eb25b3e5-fe37-450a-b183-3ce845710724"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="10" height="20" forecolor="#585858" uuid="c3a98da5-2e31-476e-bdb3-a978ccbc0bc9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="235" width="10" height="20" forecolor="#585858" uuid="004b0a7b-c542-4ab3-b9b8-7a1450f46047"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="260" width="60" height="20" forecolor="#585858" uuid="5e8a1598-1ec0-4ccd-b391-7a8e7ec946a4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Atentamente,
+]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="135" splitType="Stretch">
+			<staticText>
+				<reportElement x="202" y="10" width="154" height="30" forecolor="#585858" uuid="eb3d5359-8c8f-4880-b252-2c31c4be96d4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[José Carlos Montoya Diaz del Olmo
+Gerente de Producto Hipotecario
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="199" y="10" width="157" height="1" uuid="6a6731e3-af36-45ea-9b89-fbf87153a2bd"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
