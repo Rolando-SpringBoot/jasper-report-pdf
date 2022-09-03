@@ -3,7 +3,9 @@ package com.john.bcp.appgeneratepdf;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,11 +18,11 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -29,7 +31,7 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JsonDataSource;
 
 @RestController
-@RequestMapping("")
+@RequestMapping
 @SpringBootApplication
 public class AppGeneratePdfApplication {
 
@@ -37,8 +39,15 @@ public class AppGeneratePdfApplication {
 		SpringApplication.run(AppGeneratePdfApplication.class, args);
 	}
 
-	@PostMapping(value = "/generate-pdf", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_PDF_VALUE)
-	public ResponseEntity<Resource> generatePdf(@RequestBody String json) throws Exception {
+	@GetMapping(value = "/generate-pdf", produces = MediaType.APPLICATION_PDF_VALUE)
+	public ResponseEntity<Resource> generatePdf()
+			throws UnsupportedEncodingException, JRException, FileNotFoundException {
+		String json = "{\"fecha\":\"Miércoles, 27 de Abril del 2022\","
+				+ "\"nombre\":\"ELISA SOFIA VILLA ARCEO\",\"producto\":\"Crédito Hipotecario\","
+				+ "\"finalidad\":\"COMPRA DE INMUEBLE - VIVIENDA\",\"monto\":\"687750.00\","
+				+ "\"plazo\":\"25 años\",\"periodoGracia\":\"5 meses\",\"numeroCuotas\":\"14\","
+				+ "\"vigencia\":\"180\"}";
+
 		JsonDataSource jsonDataSource = new JsonDataSource(
 				new ByteArrayInputStream(json.getBytes(StandardCharsets.UTF_8.name())));
 		JasperReport compileReport = JasperCompileManager.compileReport(new FileInputStream("src" + File.separator
@@ -51,7 +60,7 @@ public class AppGeneratePdfApplication {
 		InputStream inputStream = new ByteArrayInputStream(data);
 
 		HttpHeaders httpHeaders = new HttpHeaders();
-		httpHeaders.add(HttpHeaders.CONTENT_DISPOSITION, "inline; fileName=invoice.pdf");
+		httpHeaders.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; fileName=invoice.pdf");
 		httpHeaders.add(HttpHeaders.CONTENT_LENGTH, String.valueOf(data.length));
 
 		return new ResponseEntity<>(new InputStreamResource(inputStream), httpHeaders, HttpStatus.OK);
