@@ -52,6 +52,7 @@ public class AppGeneratePdfApplication {
 
 		HttpHeaders httpHeaders = new HttpHeaders();
 		httpHeaders.add(HttpHeaders.CONTENT_DISPOSITION, "inline; fileName=invoice.pdf");
+		httpHeaders.add(HttpHeaders.CONTENT_LENGTH, String.valueOf(data.length));
 
 		return new ResponseEntity<>(new InputStreamResource(inputStream), httpHeaders, HttpStatus.OK);
 	}
